@@ -9,11 +9,19 @@
   <body>
     <script>
       function multiplication() {
-        let gugu = prompt("원하는 단을 입력하세요");
-        if ((!isNaN(gugu), gugu < 10)) {
-          document.write("<h1>" + gugu + "단</h1>");
+        let _multiplication = prompt("원하는 단을 입력하세요");
+        if ((!isNaN(_multiplication), _multiplication < 10)) {
+          document.write("<h1>" + _multiplication + "단</h1>");
           for (let i = 1; i < 10; i++) {
-            document.write("<p>" + gugu + "x" + i + "=" + i * gugu + "</p>");
+            document.write(
+              "<p>" +
+                _multiplication +
+                "x" +
+                i +
+                "=" +
+                i * _multiplication +
+                "</p>"
+            );
           }
         } else {
           alert("구구단에 들어가는 수가 아닙니다");
