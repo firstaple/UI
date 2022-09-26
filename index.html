@@ -14,17 +14,12 @@
           document.write("<h1>" + _multiplication + "단</h1>");
           for (let i = 1; i < 10; i++) {
             document.write(
-              "<p>" +
-                _multiplication +
-                "x" +
-                i +
-                "=" +
-                i * _multiplication +
-                "</p>"
+              "<p>" + _multiplication + "x" + i + "=" + i * _multiplication + "</p>"
             );
           }
         } else {
           alert("구구단에 들어가는 수가 아닙니다");
+          console.log("입력오류");
         }
       }
       multiplication();
